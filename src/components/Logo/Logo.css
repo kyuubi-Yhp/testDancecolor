@@ -1,0 +1,19 @@
+.logo {
+font-weight: 700;
+font-size: 36px;
+line-height: 150%;
+letter-spacing: -2px;
+text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+.logo {
+  font-size: 30px;
+}
+}
+
+@media (max-width: 768px) {
+.logo {
+  font-size: 24px;
+}
+}

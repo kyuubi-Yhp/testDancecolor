@@ -1,0 +1,40 @@
+.box__nav-aside {
+  height: 94%;
+  width: 1014px;
+  border-bottom: solid 1px #ffffff66;
+}
+
+.nav__aside {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 0 0 94px;
+  color: white;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 24px;
+  line-height: 120%;
+  transition: all 1s ease; 
+}
+
+.nav__aside li {
+  margin-bottom: 20px;
+}
+
+.open__aside {
+  opacity: 1;
+  max-height: 500px; 
+  padding: 90px 0 0 94px; 
+}
+
+
+@media (max-width: 1024px) {
+
+.open__aside {
+    padding: 81px 10px 0 44px; 
+}
+}
+
+@media (max-width: 768px) {
+
+}

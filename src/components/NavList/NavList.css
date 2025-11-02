@@ -1,0 +1,35 @@
+.box__nav {
+  align-content: center;
+}
+
+.nav__list {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 62px;
+}
+
+.nav__list li {
+font-weight: 700;
+font-style: Bold;
+font-size: 15px;
+line-height: 150%;
+text-transform: uppercase;
+}
+
+
+@media (max-width: 1024px) {
+.nav__list {
+  gap: 20px;
+}
+.nav__list li {
+  font-size: 12px;
+}
+}
+
+
+@media (max-width: 768px) {
+.box__nav {
+  display: none;
+}
+}

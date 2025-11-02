@@ -1,0 +1,51 @@
+.box__header-menu-open {
+  display: flex;
+  flex-direction: column;
+  /* вертикальная колонка */
+  justify-content: space-between;
+  /* контент сверху, футер снизу */
+  opacity: 1;
+  width: 100vw;
+  height: 100vh;
+  background-color: #011126;
+  transition: opacity 0.5s ease;
+  position: relative;
+  /* для ::before */
+}
+
+.header-open__content {
+  flex: 1;
+  /* занимает всё пространство сверху */
+  display: flex;
+  flex-direction: row;
+  /* оставляем row для nav и aside */
+  z-index: 2;
+  /* чтобы быть поверх ::before, если нужно */
+}
+
+
+.box__header-menu-open::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+  transform: translateX(-50%);
+  width: 935px;
+  height: 525px;
+  background-image: url('../../assets/Group 4.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+  z-index: 1;
+}
+
+@media (max-width: 1024px) {
+.box__header-menu-open::before {
+      left: 35%;
+}
+}
+
+
+@media (max-width: 768px) {
+
+}

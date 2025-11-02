@@ -1,0 +1,72 @@
+.box__btn {
+  z-index: 5;
+  position: absolute;
+  top: 50px;
+  right: 52px;
+  background-color: transparent;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger__btn {
+  display: block;
+  position: relative;
+  width: 40px;
+  height: 2px;
+  background-color: #000;
+  border-radius: 2px;
+}
+
+.burger__btn::before,
+.burger__btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: #000;
+  border-radius: 2px;
+  transition: all 0.4s ease;
+}
+
+.burger__btn::before {
+  top: -7px;
+}
+
+.burger__btn::after {
+  top: 7px;
+}
+
+/* изменение кнопки  */
+.burger__btn-open {
+  background-color: transparent;
+}
+
+.burger__btn-open::before,
+.burger__btn-open::after {
+  background-color: white;
+}
+
+.burger__btn-open::before {
+  width: 28px;
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.burger__btn-open::after {
+  width: 28px;
+  transform: rotate(45deg);
+  top: 0;
+}
+
+
+@media (max-width: 1024px) {
+.box__btn {
+  right: 20px;
+}
+
+}
+
+@media (max-width: 768px) {
+
+}

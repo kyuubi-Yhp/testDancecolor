@@ -1,0 +1,67 @@
+.box__navList-open {
+  padding: 81px 68px 0 64px;
+  border-right: solid 1px #ffffff66;
+  border-bottom: solid 1px #ffffff66;
+  width: 536px;
+  height: 94%;
+}
+
+.nav__list-open {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.nav__list-open li {
+  cursor: pointer;
+  color: white;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 45px;
+  line-height: 100%;
+  transition: color 0.4s ease;
+}
+
+.nav__list-open li:hover {
+  color: rgba(255, 255, 255, 0.491);
+}
+
+.li__arrov {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* поворот стрелки */
+.li__arrov::after {
+  display: inline-block;
+  transform: rotateY(180deg);
+  background-image: url(../../assets/arrov.png);
+  content: '';
+  width: 15px;
+  height: 17px;
+  transition: transform 0.7s ease;
+}
+
+.arrov__active::after {
+  transform: rotateY(360deg);
+}
+
+
+@media (max-width: 1024px) {
+.box__navList-open {
+    padding: 81px 68px 0 64px;
+}
+.nav__list-open {
+  width: 300px;
+}
+.nav__list-open li {
+  font-size: 38px;
+}
+
+}
+
+@media (max-width: 768px) {
+
+}
