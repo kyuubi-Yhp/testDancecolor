@@ -22,7 +22,7 @@
 }
 
 
-/* .box__header-menu-open::before {
+.box__header-menu-open::before {
   content: '';
   position: absolute;
   bottom: 0;
@@ -35,7 +35,7 @@
   background-size: contain;
   background-position: center bottom;
   z-index: 1;
-} */
+}
 
 @media (max-width: 1024px) {
   .box__header-menu-open::before {
@@ -46,10 +46,15 @@
 
 
 @media (max-width: 768px) {
-  .header-open__content {
-    flex-direction: column; 
+  .box__header-menu-open::before {
+    width: 130%;
+    height: 60%;
+    background-size: cover;
   }
 
-  
-}
+  .header-open__content {
+    flex-direction: column;
+  }
 
+
+}

@@ -68,7 +68,7 @@
 }
 
 @media (max-width: 768px) {
-  .box__btn {
-
-  }
+.burger__btn-open {
+  display: none;
+}
 }

@@ -4,14 +4,3 @@
   margin-right: 122px;
 }
 
-@media (max-width: 1024px) {
-  .box__header-menu {
-    margin-right: 85px;
-  }
-}
-
-@media (max-width: 768px) {
-  .box__header-menu {
-    margin-right: 85px;
-  }
-}
