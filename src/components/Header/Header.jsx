@@ -3,7 +3,7 @@ import { NavList } from "../NavList/NavList"
 
 import './Header.css'
 
-export const Header = ({ isOpen, BurgerBtnChange }) => {
+export const Header = () => {
   return (
     <div className="box__header-menu">
       <Logo />
