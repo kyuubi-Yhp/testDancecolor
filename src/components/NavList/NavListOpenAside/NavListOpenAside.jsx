@@ -5,9 +5,9 @@ import { TapForMetext } from './TapForMeText'
 export const NavListOpenAside = ({ isRotate }) => {
   return (
     <div className='box__nav-aside'>
-        <TapForMetext 
+        {/* <TapForMetext 
         isRotate={isRotate}
-        />
+        /> */}
       <ul className={`nav__aside ${isRotate ? 'open__aside' : ''}`}>
       <li>Аренда павильонов и студий</li>
       <li>Аренда светового оборудования</li>

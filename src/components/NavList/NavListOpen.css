@@ -50,18 +50,34 @@
 
 
 @media (max-width: 1024px) {
-.box__navList-open {
+  .box__navList-open {
     padding: 81px 68px 0 64px;
-}
-.nav__list-open {
-  width: 300px;
-}
-.nav__list-open li {
-  font-size: 38px;
-}
+  }
 
+  .nav__list-open {
+    width: 330px;
+  }
+
+  .nav__list-open li {
+    font-size: 38px;
+  }
 }
 
 @media (max-width: 768px) {
+  .box__navList-open {
+    order: 1;
+    width: 100%;
+    height: 270px;
+    padding: 20px;
+    border-right: none;
+    border-bottom: none;
+  }
 
+  .box__navList-open {
+    width: 100%;
+  }
+
+  .nav__list-open li {
+    font-size: 30px;
+  }
 }

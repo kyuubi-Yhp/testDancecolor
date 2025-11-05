@@ -14,7 +14,7 @@
   font-style: Medium;
   font-size: 24px;
   line-height: 120%;
-  transition: all 1s ease; 
+  transition: opacity, max-height 1s ease;
 }
 
 .nav__aside li {
@@ -23,18 +23,34 @@
 
 .open__aside {
   opacity: 1;
-  max-height: 500px; 
-  padding: 90px 0 0 94px; 
+  max-height: 500px;
+  padding: 90px 0 0 94px;
 }
 
 
 @media (max-width: 1024px) {
-
-.open__aside {
-    padding: 81px 10px 0 44px; 
-}
+  .open__aside {
+    padding: 81px 10px 0 44px;
+  }
 }
 
 @media (max-width: 768px) {
 
+  .box__nav-aside {
+    order: 2;
+    width: 100%;
+    border: none;
+    border-bottom: solid 1px #ffffff66;
+  }
+
+  .nav__aside li {
+    margin-bottom: 16px;
+    font-size: 18px;
+  }
+
+  .open__aside {
+    margin: 20px;
+    border-top: solid 1px #333;
+    padding: 20px 0 0 0;
+  }
 }
