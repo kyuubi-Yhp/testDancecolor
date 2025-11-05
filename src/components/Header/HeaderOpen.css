@@ -8,17 +8,13 @@
   background-color: #011126;
   transition: opacity 0.5s ease;
   position: relative;
-  /* для ::before */
 }
 
 .header-open__content {
   flex: 1;
-  /* занимает всё пространство сверху */
   display: flex;
   flex-direction: row;
-  /* оставляем row для nav и aside */
   z-index: 2;
-  /* чтобы быть поверх ::before, если нужно */
 }
 
 
@@ -48,7 +44,7 @@
 @media (max-width: 768px) {
   .box__header-menu-open::before {
     width: 130%;
-    height: 60%;
+    /* height: 60%; */
     background-size: cover;
   }
 
