@@ -29,27 +29,12 @@
 }
 
 .header-open__content {
-  flex: 1;
+  /* flex: 1; */
   display: flex;
   flex-direction: row;
   z-index: 2;
 }
 
-
-.box__header-menu-open::before {
-  /* content: '';
-  position: absolute;
-  bottom: 0;
-  left: 45%;
-  transform: translateX(-50%);
-  width: 935px;
-  height: 525px;
-  background-image: url('../../assets/Group 4.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center bottom;
-  z-index: 1; */
-}
 
 @media (max-width: 1024px) {
 .box__background::before {
@@ -62,7 +47,6 @@
 @media (max-width: 768px) {
 .box__background::before {
     width: 130%;
-    /* height: 60%; */
     background-size: cover;
   }
 

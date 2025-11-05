@@ -80,4 +80,11 @@
   .nav__list-open li {
     font-size: 30px;
   }
+
+  .li__arrov::after {
+    transform: rotate(90deg);
+  }
+  .arrov__active::after {
+        transform: rotate(0deg);
+  }
 }
